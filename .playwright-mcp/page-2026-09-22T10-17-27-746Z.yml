@@ -1,0 +1,44 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Mahi Lifestyle" [ref=e5]
+      - link "MAHI LIFESTYLE" [ref=e6] [cursor=pointer]:
+        - /url: index.html
+        - generic [ref=e7]: MAHI
+        - generic [ref=e8]: LIFESTYLE
+    - generic [ref=e9]:
+      - link "" [ref=e10] [cursor=pointer]:
+        - /url: index.html
+      - link "Open wishlist panel" [ref=e12] [cursor=pointer]:
+        - /url: "#wishlistPanel"
+        - generic [ref=e13]: 
+      - link "Open cart panel" [ref=e14] [cursor=pointer]:
+        - /url: "#cartPanel"
+        - generic [ref=e15]: 
+        - generic [ref=e16]: "0"
+      - link "Open profile panel" [ref=e17] [cursor=pointer]:
+        - /url: "#profilePanel"
+        - generic [ref=e18]: 
+  - main [ref=e19]:
+    - generic [ref=e20]:
+      - generic [ref=e21]: 
+      - text: Loading product...
+  - complementary [aria-hidden] [ref=e22]:
+    - button [ref=e23] [cursor=pointer]:
+      - generic [ref=e24]: 
+    - generic [ref=e25]: 
+    - generic [ref=e27]: MY ACCOUNT
+    - heading [level=2] [ref=e28]: Welcome to Mahi Lifestyle
+    - paragraph [ref=e29]: Sign in or create an account to view your account details and orders.
+    - link [ref=e30] [cursor=pointer]:
+      - /url: login.html
+      - text: Go to Login
+      - generic [ref=e31]: 
+    - link [ref=e32] [cursor=pointer]:
+      - /url: register.html
+      - text: Create Account
+      - generic [ref=e33]: 
+  - complementary [aria-hidden] [ref=e34]
+  - complementary [aria-hidden] [ref=e35]

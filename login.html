@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon"
+          type="image/jpeg"
+          href="./images/logo.jpeg">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Login CSS -->
+    <link rel="stylesheet"
+          href="./src/login.css">
+
+    <title>Login | Mahi Lifestyle</title>
+
+</head>
+
+<body>
+
+    <!-- ================= LOGIN PAGE ================= -->
+
+    <main class="login-page">
+
+        <!-- Left Section -->
+
+        <section class="login-left">
+
+            <div class="login-brand">
+
+                <img src="./images/logo.jpeg"
+                     alt="Mahi Lifestyle">
+
+                <div class="brand-text">
+
+                    <div class="brand-name">
+                        MAHI
+                    </div>
+
+                    <div class="brand-subtitle">
+                        LIFESTYLE
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="login-left-content">
+
+                <span class="welcome-tag">
+                    ✨ WELCOME BACK
+                </span>
+
+                <h1>
+                    Shop your
+                    <span>favorite products</span>
+                    with Mahi Lifestyle.
+                </h1>
+
+                <p>
+                    Login to your account and continue
+                    exploring premium electronics,
+                    fashion and lifestyle products.
+                </p>
+
+            </div>
+
+
+            <div class="login-features">
+
+                <div class="login-feature">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    <div>
+                        <strong>Secure Shopping</strong>
+                        <span>Your information is protected</span>
+                    </div>
+
+                </div>
+
+
+                <div class="login-feature">
+
+                    <i class="fa-solid fa-truck-fast"></i>
+
+                    <div>
+                        <strong>Fast Delivery</strong>
+                        <span>Quick and reliable delivery</span>
+                    </div>
+
+                </div>
+
+
+                <div class="login-feature">
+
+                    <i class="fa-solid fa-headset"></i>
+
+                    <div>
+                        <strong>24/7 Support</strong>
+                        <span>We're here to help you</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Right Section -->
+
+        <section class="login-right">
+
+            <div class="login-card">
+
+                <!-- Mobile Logo -->
+
+                <div class="mobile-logo">
+
+                    <img src="./images/logo.jpeg"
+                         alt="Mahi Lifestyle">
+
+                </div>
+
+
+                <div class="login-header">
+
+                    <h2>
+                        Welcome Back!
+                    </h2>
+
+                    <p>
+                        Login to your Mahi Lifestyle account
+                    </p>
+
+                </div>
+
+
+                <!-- Login Form -->
+
+                <form id="loginForm">
+
+                    <!-- Email -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <div class="input-box">
+
+                            <i class="fa-regular fa-envelope"></i>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Password -->
+
+                    <div class="form-group">
+
+                        <div class="password-label">
+
+                            <label for="password">
+                                Password
+                            </label>
+
+                            <a href="#">
+                                Forgot Password?
+                            </a>
+
+                        </div>
+
+
+                        <div class="input-box">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                id="togglePassword"
+                                class="password-toggle"
+                                title="Show password"
+                            >
+
+                                <i class="fa-regular fa-eye"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Remember -->
+
+                    <div class="remember-row">
+
+                        <label class="remember">
+
+                            <input
+                                type="checkbox"
+                                id="rememberMe"
+                            >
+
+                            <span>
+                                Remember me
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- Login Button -->
+
+                    <button
+                        type="submit"
+                        class="login-btn"
+                    >
+
+                        <span>
+                            Login
+                        </span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+
+                    <!-- Demo Login -->
+
+                    <button
+                        type="button"
+                        class="demo-login"
+                        id="demoLogin"
+                        title="Use demo credentials"
+                    >
+
+                        <i class="fa-solid fa-circle-info"></i>
+
+                        <span>
+                            Demo: demo@gmail.com / 123456
+                        </span>
+
+                    </button>
+
+                </form>
+
+
+                <!-- Register -->
+
+                <div class="register-link">
+
+                    <span>
+                        Don't have an account?
+                    </span>
+
+                    <a href="register.html">
+                        Create Account
+                    </a>
+
+                </div>
+
+
+                <!-- Back Home -->
+
+                <a
+                    href="index.html"
+                    class="back-home"
+                >
+
+                    <i class="fa-solid fa-arrow-left"></i>
+
+                    Back to Home
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Login JavaScript -->
+
+    <script
+        type="module"
+        src="/src/login.js">
+    </script>
+
+</body>
+
+</html>
+

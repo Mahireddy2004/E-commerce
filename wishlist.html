@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/jpeg" href="./images/logo.jpeg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="./src/style.css">
+  <title>Wishlist | Mahi Lifestyle</title>
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="./images/logo.jpeg" alt="Mahi Lifestyle">
+      </a>
+      <a href="index.html" class="brand-logo">
+        <div class="brand-name">MAHI</div>
+        <div class="brand-subtitle">LIFESTYLE</div>
+      </a>
+    </div>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search products..." aria-label="Search products">
+      <button type="button" aria-label="Search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+
+    <div class="nav-icons">
+      <a href="index.html" title="Home">
+        <i class="fa-solid fa-house"></i>
+      </a>
+      <a href="wishlist.html" title="Wishlist">
+        <i class="fa-solid fa-heart"></i>
+        <span class="count" id="wishlistCount">0</span>
+      </a>
+      <a href="cart.html" title="Shopping Cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="count" id="cartCount">0</span>
+      </a>
+      <a href="login.html" title="Profile / Login" aria-label="Profile / Login">
+        <i class="fa-regular fa-user"></i>
+      </a>
+    </div>
+  </header>
+
+  <main class="wishlist-page">
+    <div class="wishlist-heading">
+      <span class="products-tag">YOUR WISHLIST</span>
+      <h1>Saved Products</h1>
+      <p>Keep your favorite products close and move them to your cart when ready.</p>
+    </div>
+    <div id="wishlistContent" class="wishlist-grid"></div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section footer-about">
+        <a href="index.html" class="footer-brand" aria-label="Mahi Lifestyle home">
+          <strong>MAHI</strong>
+          <span>LIFESTYLE</span>
+        </a>
+        <p>Welcome to Mahi Lifestyle. Discover quality products for everyday life.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="cart.html">Shopping Cart</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/wishlist.js"></script>
+  <script type="module" src="/src/navbar.js"></script>
+</body>
+
+</html>

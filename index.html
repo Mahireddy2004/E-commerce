@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/jpeg" href="./images/logo.jpeg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="./src/style.css">
+
+  <title>Mahi Life Style</title>
+</head>
+
+<body>
+
+  <!--NAVBAR-->
+  <header class="navbar">
+    <!-- Logo -->
+    <div class="logo">
+      <a href="index.html">
+        <img src="./images/logo.jpeg" alt="Mahi Lifestyle" >
+      </a>
+
+    <!-- MAHI LIFESTYLE LOGO -->
+    <a href="index.html" class="brand-logo">
+    <div class="brand-name">MAHI</div>
+    <div class="brand-subtitle">LIFESTYLE</div>
+</a>
+
+    </div>
+
+
+    <!-- Search -->
+    <div class="search-box">
+
+      <input type="text" placeholder="Search products...">
+
+      <button>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+
+    </div>
+
+
+    <!-- Right Side -->
+    <div class="nav-icons">
+
+      <!-- Home -->
+      <a href="index.html" title="Home">
+        <i class="fa-solid fa-house"></i>
+      </a>
+
+      <!-- Wishlist -->
+      <a href="wishlist.html" title="Wishlist">
+        <i class="fa-regular fa-heart"></i>
+        <span class="count">0</span>
+      </a>
+
+      <!-- Cart -->
+      <a href="cart.html" title="Shopping Cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="count">0</span>
+      </a>
+
+      <!-- User -->
+      <a href="login.html" title="Profile / Login" aria-label="Profile / Login">
+        <i class="fa-regular fa-user"></i>
+      </a>
+
+    </div>
+
+  </header>
+
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero">
+
+  <div class="hero-content">
+
+    <span class="hero-tag">
+      ✨ NEW COLLECTION 2026
+    </span>
+
+    <h1>
+      Discover your
+      <span>Perfect Style</span>
+    With Premium Products.
+    </h1>
+
+    <p>
+      Discover premium electronics and lifestyle products
+      designed to make your everyday life smarter, easier
+      and better.
+    </p>
+
+    <div class="hero-buttons">
+
+      <a href="#products" class="hero-btn primary-btn">
+        Shop Now
+        <i class="fas fa-arrow-right"></i>
+      </a>
+
+      <a href="#products" class="hero-btn secondary-btn">
+        Explore Products
+      </a>
+
+    </div>
+
+
+  </div>
+
+
+    <!-- HERO IMAGE -->
+    <div class="hero-image">
+
+        <div class="hero-circle"></div>
+
+        <img src="./images/herosection-banner.png"
+             alt="Mahi Lifestyle Products">
+
+        <!-- Floating Card 1 -->
+        <div class="floating-card card-one">
+            <i class="fas fa-star"></i>
+            <div>
+                <strong>4.9/5</strong>
+                <span>Customer Rating</span>
+            </div>
+        </div>
+
+        <!-- Floating Card 2 -->
+        <div class="floating-card card-two">
+            <i class="fas fa-shopping-bag"></i>
+            <div>
+                <strong>10K+</strong>
+                <span>Happy Customers</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PRODUCTS SECTION ================= -->
+<section class="products-section" id="products">
+
+    <div class="products-header">
+        <span class="products-tag">OUR PRODUCTS</span>
+
+        <h2>
+            Explore Our
+            <span>Latest Products</span>
+        </h2>
+
+        <p>
+            Discover quality products from electronics, fashion,
+            footwear and accessories.
+        </p>
+    </div>
+
+    <div class="products-layout">
+      <aside class="category-sidebar" aria-label="Product categories">
+      <span class="category-sidebar-label">BROWSE</span>
+      <h3>Categories</h3>
+
+      <div class="category-buttons">
+        <button class="category-btn active" data-category="all">
+            All
+        </button>
+
+        <button class="category-btn" data-category="electronics">
+            Electronics
+        </button>
+
+        <button class="category-btn" data-category="jewelery">
+            Jewellery
+        </button>
+
+        <button class="category-btn" data-category="men's clothing">
+            Men's Clothing
+        </button>
+
+        <button class="category-btn" data-category="women's clothing">
+            Women's Clothing
+        </button>
+        </div>
+        </aside>
+
+        <!-- Products will come here from API -->
+        <div class="products-container" id="productsContainer">
+
+        <div class="loading">
+            <i class="fas fa-spinner fa-spin"></i>
+            Loading products...
+        </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+
+<!--FOOTER-->
+
+<footer class="footer">
+
+    <!-- Footer Main Section -->
+    <div class="footer-container">
+
+        <!-- About -->
+        <div class="footer-section footer-about">
+
+            <a href="index.html" class="footer-brand" aria-label="Mahi Lifestyle home">
+              <strong>MAHI</strong>
+              <span>LIFESTYLE</span>
+            </a>
+                 
+
+            <p>
+                Welcome to Mahi Lifestyle. Discover the latest
+                fashion, electronics, footwear, accessories and
+                more at the best prices.
+            </p>
+
+            <!-- Social Media -->
+            <div class="social-icons">
+                <a href="#" title="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" title="Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#" title="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <a href="#" title="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="index.html#products">Shop</a>
+            <a href="index.html#products">Offers</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="cart.html">Shopping Cart</a>
+        </div>
+
+
+        <!-- Categories -->
+        <div class="footer-section">
+            <h3>Categories</h3>
+            <a href="index.html#products">Men</a>
+            <a href="index.html#products">Women</a>
+            <a href="index.html#products">Kids</a>
+            <a href="index.html#products">Electronics</a>
+            <a href="index.html#products">Footwear</a>
+            <a href="index.html#products">Accessories</a>
+        </div>
+
+
+        <!-- Customer Service -->
+        <div class="footer-section">
+            <h3>Customer Service</h3>
+            <a href="#">Contact Us</a>
+            <a href="#">FAQ</a>
+            <a href="#">Shipping Information</a>
+            <a href="#">Return Policy</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+
+        </div>
+
+
+        <!-- Contact -->
+        <div class="footer-section footer-contact">
+            <h3>Contact Us</h3>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Hyderabad, Telangana, India
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +91 8790116301
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                support@mahilifestyle.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-clock"></i>
+                Mon - Sat: 9:00 AM - 8:00 PM
+            </p>
+        </div>
+
+          <div class="footer-highlights" aria-label="Mahi Lifestyle benefits">
+            <div class="footer-highlight">
+              <i class="fa-solid fa-truck-fast"></i>
+              <div><strong>Fast Delivery</strong><span>Reliable doorstep delivery</span></div>
+            </div>
+            <div class="footer-highlight">
+              <i class="fa-solid fa-rotate-left"></i>
+              <div><strong>Easy Returns</strong><span>Simple 7-day returns</span></div>
+            </div>
+            <div class="footer-highlight">
+              <i class="fa-solid fa-shield-halved"></i>
+              <div><strong>Secure Payments</strong><span>Protected checkout</span></div>
+            </div>
+            <div class="footer-highlight">
+              <i class="fa-solid fa-headset"></i>
+              <div><strong>Friendly Support</strong><span>Here when you need us</span></div>
+            </div>
+          </div>
+
+    </div>
+
+        <div class="footer-bottom">
+          <span>© 2026 Mahi Lifestyle. All rights reserved.</span>
+          <span>Shop confidently with Mahi Lifestyle</span>
+        </div>
+
+
+    
+</footer>
+
+
+
+
+  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/src/navbar.js"></script>
+   
+</body>
+
+</html>

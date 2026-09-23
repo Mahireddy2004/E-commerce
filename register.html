@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpeg" href="./images/logo.jpeg">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Login & Auth CSS -->
+    <link rel="stylesheet" href="./src/login.css">
+
+    <title>Register | Mahi Lifestyle</title>
+</head>
+
+<body>
+
+    <!-- ================= REGISTER PAGE ================= -->
+    <main class="login-page">
+
+        <!-- Left Section -->
+        <section class="login-left">
+            <div class="login-brand">
+                <img src="./images/logo.jpeg" alt="Mahi Lifestyle">
+                <div class="brand-text">
+                    <div class="brand-name">MAHI</div>
+                    <div class="brand-subtitle">LIFESTYLE</div>
+                </div>
+            </div>
+
+            <div class="login-left-content">
+                <span class="welcome-tag">✨ JOIN US TODAY</span>
+                <h1>
+                    Create your
+                    <span>free account</span>
+                    with Mahi Lifestyle.
+                </h1>
+                <p>
+                    Sign up to discover the latest fashion,
+                    premium electronics, accessories and lifestyle
+                    products at the best prices.
+                </p>
+            </div>
+
+            <div class="login-features">
+                <div class="login-feature">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <div>
+                        <strong>Secure Shopping</strong>
+                        <span>Your information is protected</span>
+                    </div>
+                </div>
+
+                <div class="login-feature">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <div>
+                        <strong>Fast Delivery</strong>
+                        <span>Quick and reliable delivery</span>
+                    </div>
+                </div>
+
+                <div class="login-feature">
+                    <i class="fa-solid fa-headset"></i>
+                    <div>
+                        <strong>24/7 Support</strong>
+                        <span>We're here to help you</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Right Section -->
+        <section class="login-right">
+            <div class="login-card">
+                <!-- Mobile Logo -->
+                <div class="mobile-logo">
+                    <img src="./images/logo.jpeg" alt="Mahi Lifestyle">
+                </div>
+
+                <div class="login-header">
+                    <h2>Create Account</h2>
+                    <p>Join Mahi Lifestyle for a faster shopping experience</p>
+                </div>
+
+                <!-- Registration Form -->
+                <form id="registerForm" novalidate>
+                    <!-- Full Name -->
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <div class="input-box">
+                            <i class="fa-regular fa-user"></i>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your full name"
+                                autocomplete="name"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <div class="input-box">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                autocomplete="email"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div class="form-group">
+                        <label for="phone">Phone Number (10 Digits)</label>
+                        <div class="input-box">
+                            <i class="fa-solid fa-phone"></i>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="e.g. 9876543210"
+                                autocomplete="tel"
+                                inputmode="numeric"
+                                maxlength="10"
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="form-group">
+                        <div class="password-label">
+                            <label for="password">Password</label>
+                            <span class="password-hint">Min. 6 characters</span>
+                        </div>
+                        <div class="input-box">
+                            <i class="fa-solid fa-lock"></i>
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Create a password"
+                                autocomplete="new-password"
+                                required
+                                minlength="6"
+                            >
+                            <button
+                                type="button"
+                                id="togglePassword"
+                                class="password-toggle"
+                                title="Show password"
+                            >
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Confirm Password -->
+                    <div class="form-group">
+                        <div class="password-label">
+                            <label for="confirmPassword">Confirm Password</label>
+                        </div>
+                        <div class="input-box">
+                            <i class="fa-solid fa-lock"></i>
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                name="confirmPassword"
+                                placeholder="Confirm your password"
+                                autocomplete="new-password"
+                                required
+                                minlength="6"
+                            >
+                            <button
+                                type="button"
+                                id="toggleConfirmPassword"
+                                class="password-toggle"
+                                title="Show password"
+                            >
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="login-btn" id="submitBtn">
+                        <span>Create Account</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </form>
+
+                <!-- Already have account -->
+                <div class="register-link">
+                    <span>Already have an account?</span>
+                    <a href="login.html">Login</a>
+                </div>
+
+                <!-- Back Home -->
+                <a href="index.html" class="back-home">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Back to Home
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Register JavaScript -->
+    <script type="module" src="/src/register.js"></script>
+
+</body>
+
+</html>

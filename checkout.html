@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/jpeg" href="./images/logo.jpeg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="./src/style.css">
+  <title>Checkout & Bill | Mahi Lifestyle</title>
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="./images/logo.jpeg" alt="Mahi Lifestyle"></a>
+      <a href="index.html" class="brand-logo">
+        <div class="brand-name">MAHI</div>
+        <div class="brand-subtitle">LIFESTYLE</div>
+      </a>
+    </div>
+    <div class="nav-icons">
+      <a href="index.html" title="Home"><i class="fa-solid fa-house"></i></a>
+      <a href="wishlist.html" title="Wishlist"><i class="fa-regular fa-heart"></i></a>
+      <a href="cart.html" title="Shopping Cart"><i class="fa-solid fa-cart-shopping"></i></a>
+      <a href="login.html" title="Profile / Login"><i class="fa-regular fa-user"></i></a>
+    </div>
+  </header>
+
+  <main class="checkout-page">
+    <div class="cart-heading">
+      <span class="products-tag">SECURE CHECKOUT</span>
+      <h1>Complete Your Order</h1>
+      <p>Enter your delivery details and review your bill before placing the order.</p>
+    </div>
+
+    <div id="checkoutContent" class="checkout-layout"></div>
+  </main>
+
+  <script type="module" src="/src/checkout.js"></script>
+  <script type="module" src="/src/navbar.js"></script>
+</body>
+
+</html>
