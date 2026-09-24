@@ -55,6 +55,18 @@ function formatOrderPrice(price) {
     return `₹${Math.round(Number(price) || 0).toLocaleString("en-IN")}`;
 }
 
+function formatMemberSince(date) {
+    if (!date) return "September 2026";
+
+    const memberDate = new Date(date);
+    return Number.isNaN(memberDate.getTime())
+        ? "September 2026"
+        : memberDate.toLocaleDateString("en-IN", {
+            month: "long",
+            year: "numeric"
+        });
+}
+
 profilePanel.className = "profile-panel";
 profilePanel.setAttribute("aria-hidden", "true");
 profilePanel.innerHTML = user ? `
@@ -76,6 +88,8 @@ profilePanel.innerHTML = user ? `
     <div class="profile-panel-details">
         <div><i class="fa-solid fa-phone"></i><span>${user.phone || "+91 8790116301"}</span></div>
         <div><i class="fa-solid fa-location-dot"></i><span>${user.location || "Hyderabad, Telangana"}</span></div>
+        <div><i class="fa-regular fa-calendar-check"></i><span>Member since ${formatMemberSince(user.createdAt)}</span></div>
+        <div><i class="fa-solid fa-circle-check"></i><span>Account status: Active</span></div>
     </div>
     <section class="profile-previous-orders">
         <button class="profile-order-history-toggle profile-panel-action" type="button" aria-expanded="false">

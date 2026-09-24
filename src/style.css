@@ -2580,6 +2580,51 @@ body {
     font-size: 14px;
 }
 
+.profile-edit-button {
+    margin-bottom: 12px;
+}
+
+.profile-edit-form {
+    display: grid;
+    gap: 8px;
+    margin: 0 0 25px;
+    padding: 18px;
+    border: 1px solid #dfeaf5;
+    border-radius: 12px;
+    background: #f8fcfe;
+    text-align: left;
+}
+
+.profile-edit-form label {
+    color: #032650;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.profile-edit-form input {
+    width: 100%;
+    margin-bottom: 6px;
+    padding: 11px 12px;
+    border: 1px solid #cbdde8;
+    border-radius: 7px;
+    color: #032650;
+    background: white;
+    font: inherit;
+    font-size: 13px;
+}
+
+.profile-edit-form input:focus {
+    border-color: #00A6F0;
+    outline: 2px solid rgba(0, 166, 240, 0.15);
+}
+
+.profile-edit-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 6px;
+}
+
 .profile-orders {
     margin: 25px 0;
     text-align: left;

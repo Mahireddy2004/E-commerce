@@ -42,6 +42,21 @@ if (!user) {
             <div><span>Account status</span><strong>Active</strong></div>
             <div><span>Previous orders</span><strong>${orders.length}</strong></div>
         </div>
+        <button class="cart-action secondary profile-edit-button" id="editProfileButton" type="button" aria-expanded="false">
+            <i class="fa-solid fa-pen-to-square"></i> Edit Profile
+        </button>
+        <form class="profile-edit-form" id="profileEditForm" hidden>
+            <label for="profileName">Full Name</label>
+            <input id="profileName" name="name" type="text" value="${userName}" required minlength="2">
+            <label for="profilePhone">Phone Number</label>
+            <input id="profilePhone" name="phone" type="tel" value="${userPhone}" inputmode="tel">
+            <label for="profileLocation">Location</label>
+            <input id="profileLocation" name="location" type="text" value="${userLocation}" required>
+            <div class="profile-edit-actions">
+                <button class="cart-action primary" type="submit"><i class="fa-solid fa-check"></i> Save Changes</button>
+                <button class="cart-action secondary" id="cancelProfileEdit" type="button">Cancel</button>
+            </div>
+        </form>
         <div class="profile-orders">
             <button class="profile-order-history-toggle profile-page-order-toggle" type="button" aria-expanded="false">
                 <span class="products-tag">ORDER HISTORY</span>
@@ -140,6 +155,48 @@ if (!user) {
             button.setAttribute("aria-expanded", String(isOpen));
             details.hidden = !isOpen;
         });
+    });
+
+    const editProfileButton = document.getElementById("editProfileButton");
+    const profileEditForm = document.getElementById("profileEditForm");
+    const cancelProfileEdit = document.getElementById("cancelProfileEdit");
+
+    editProfileButton.addEventListener("click", () => {
+        const isOpen = editProfileButton.getAttribute("aria-expanded") === "true";
+        editProfileButton.setAttribute("aria-expanded", String(!isOpen));
+        profileEditForm.hidden = isOpen;
+    });
+
+    cancelProfileEdit.addEventListener("click", () => {
+        editProfileButton.setAttribute("aria-expanded", "false");
+        profileEditForm.hidden = true;
+    });
+
+    profileEditForm.addEventListener("submit", event => {
+        event.preventDefault();
+
+        const formData = new FormData(profileEditForm);
+        const updatedUser = {
+            ...user,
+            name: formData.get("name").trim(),
+            phone: formData.get("phone").trim() || "+91 8790116301",
+            location: formData.get("location").trim()
+        };
+
+        if (updatedUser.name.length < 2 || !updatedUser.location) {
+            return;
+        }
+
+        localStorage.setItem("mahiUser", JSON.stringify(updatedUser));
+
+        const users = JSON.parse(localStorage.getItem("mahiUsers")) || [];
+        const updatedUsers = users.map(savedUser =>
+            savedUser.email === user.email
+                ? { ...savedUser, ...updatedUser }
+                : savedUser
+        );
+        localStorage.setItem("mahiUsers", JSON.stringify(updatedUsers));
+        window.location.reload();
     });
 
     document.getElementById("logoutButton").addEventListener("click", () => {
