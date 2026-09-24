@@ -220,7 +220,6 @@ function renderWishlistPanel() {
 
 profileOverlay.className = "profile-overlay";
 document.body.append(profileOverlay, profilePanel, cartPanel, wishlistPanel);
-
 profilePanel.querySelector(".profile-order-history-toggle")?.addEventListener("click", () => {
     const button = profilePanel.querySelector(".profile-order-history-toggle");
     const panel = profilePanel.querySelector(".profile-order-history-panel");
